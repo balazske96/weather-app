@@ -12,7 +12,7 @@ function App() {
 
 
   // This function is just a helper function to avoid react http's problem
-  if(window.location.protocol === 'https'){
+  if(window.location.protocol === 'https:'){
       window.location.href = 'http://venyige-weather.herokuapp.com';
   }
   //Function ends (delete later)
