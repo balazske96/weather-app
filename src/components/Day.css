@@ -1,0 +1,29 @@
+.day-component {
+    background-color: darkgray;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    /* margin: 10px; */
+}
+
+.weather-symbol{
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+}
+
+.day-degree-part {
+    display: flex;
+    justify-content: center;    
+
+}
+
+.day-name-container {
+    display: flex;
+    justify-content: center;
+}
+
+.day-degree-value {
+    margin: 1px;
+    margin-bottom: 10px;
+}

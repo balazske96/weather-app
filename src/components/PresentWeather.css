@@ -1,0 +1,30 @@
+.present-weather-component {
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: darkgray;
+    width: max-content;
+    padding: 30px
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.present-weather-symbol{
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.present-weather-temperature {
+    display: flex;
+    justify-content: center;
+    font-size: 300%;
+}
+
+.present-weather-type {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    font-size: 300%;
+}
