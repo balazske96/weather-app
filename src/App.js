@@ -17,9 +17,9 @@ function App() {
   }
   //Function ends (delete later)
 
-  // setInterval(() => {
-  //   window.location.reload();
-  // }, 30000)
+  setInterval(() => {
+    window.location.reload();
+  }, 30000)
 
 
   useEffect(() => {
@@ -50,10 +50,10 @@ function App() {
     <div className='weather-components-container app-component' >
       <PresentWeather></PresentWeather>
       <div className='days-container-container'>
-        <DaysContainer></DaysContainer>
-        <div className='five-day-forecast-title'>
+      <div className='five-day-forecast-title'>
           5 day forecast
         </div>
+        <DaysContainer></DaysContainer>
       </div>
     </div>
   );
