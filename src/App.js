@@ -48,9 +48,14 @@ function App() {
 
 
   return (
-    <div className='weather-components-container' > 
+    <div className='weather-components-container app-component' >
       <PresentWeather></PresentWeather>
-      <DaysContainer></DaysContainer>
+      <div className='days-container-container'>
+      <div className='five-day-forecast-title'>
+          5 day forecast
+        </div>
+        <DaysContainer></DaysContainer>
+      </div>
     </div>
   );
 }
