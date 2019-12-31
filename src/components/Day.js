@@ -67,10 +67,10 @@ export default function Day(props) {
     }, [])
 
     return (
-        <div className='day-component'>
+        <div className='day-component corner'>
             <img src={weatherPicturePath} alt="Weather Symbol" className="weather-symbol"></img>
             <div className='day-name-container'>
-                <p>{dayName}</p>
+                {dayName}
             </div>
             <div className='day-degree-part'>
                 <p className='day-degree-value'>{minimumDegree}</p>
