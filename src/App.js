@@ -18,9 +18,9 @@ function App() {
   }
   //Function ends (delete later)
 
-  // setInterval(() => {
-  //   window.location.reload();
-  // }, 30000)
+   setInterval(() => {
+     window.location.reload();
+   }, 30000)
 
 
   useEffect(() => {
