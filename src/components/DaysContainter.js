@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import Day from './Day';
-import './DaysContainer.css';
 import axios from 'axios';
 
 export default function DaysContainer(props) {
@@ -36,8 +35,7 @@ export default function DaysContainer(props) {
     }, [])
 
     return (
-        < div className="days-container" >
-            
+        <React.Fragment>
             {
                 days.map(day => {
                     return <Day
@@ -47,6 +45,6 @@ export default function DaysContainer(props) {
                         type={day.type}></Day>
                 })
             }
-        </div >
+        </React.Fragment>
     );
 }

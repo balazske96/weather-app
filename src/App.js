@@ -12,15 +12,15 @@ function App() {
 
 
   // This function is just a helper function to avoid react http's problem
-  if(window.location.protocol === 'https:'){
-      window.location.href = 'http://venyige-weather.herokuapp.com';
-      window.location.reload();
+  if (window.location.protocol === 'https:') {
+    window.location.href = 'http://venyige-weather.herokuapp.com';
+    window.location.reload();
   }
   //Function ends (delete later)
 
-  setInterval(() => {
-    window.location.reload();
-  }, 30000)
+   setInterval(() => {
+     window.location.reload();
+   }, 30000)
 
 
   useEffect(() => {
@@ -48,15 +48,11 @@ function App() {
 
 
   return (
-    <div className='weather-components-container app-component' >
+    <div className='weather-components-container' >
       <PresentWeather></PresentWeather>
-      <div className='days-container-container'>
-      <div className='five-day-forecast-title'>
-          5 day forecast
-        </div>
-        <DaysContainer></DaysContainer>
-      </div>
-    </div>
+      <div className='five-day-forecast-title corner'>5 day forecast</div>
+      <DaysContainer></DaysContainer>
+    </div >
   );
 }
 

@@ -70,9 +70,9 @@ export default function PresentWeather(props) {
         Axios.get('http://api.openweathermap.org/data/2.5/weather?q=Budapest,hu&units=metric&APPID=f20aa9b471478b0c833a2bea588f7a05')
             .then(result => {
                 setWeatherPicture(result);
-                if(result.data.main.temp < 0){
-                    setTemperature(-1 * Math.floor(Math.abs(result.data.main.temp)))   
-                }else {
+                if (result.data.main.temp < 0) {
+                    setTemperature(-1 * Math.floor(Math.abs(result.data.main.temp)))
+                } else {
                     setTemperature(Math.floor(result.data.main.temp))
                 }
                 setWeatherType(result.data.weather[0].main);
@@ -81,10 +81,10 @@ export default function PresentWeather(props) {
 
 
     return (
-        <div className='present-weather-component'>
+        <div className='present-weather-component corner'>
             <img src={weatherPicturePath} alt="Weather Symbol" className="present-weather-symbol"></img>
-    <p className='present-weather-type'>{weatherType}</p>
-            <p className="present-weather-temperature">{temperature}</p>
+            <div className='present-weather-type'>{weatherType}</div>
+            <div className="present-weather-temperature">{temperature}</div>
         </div>
     )
 }
