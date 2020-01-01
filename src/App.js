@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import DaysContainer from './components/DaysContainter';
 import PresentWeather from './components/PresentWeather';
+import CreditentialsFooter from './components/CreditentialsFooter';
+import CreditentialsComponent from './components/CreditentialsComponent';
 import RAINY from './backgrounds/RAINY.jpg';
 import SUNNY from './backgrounds/SUNNY.jpg';
 import CLOUDY from './backgrounds/CLOUDY.jpg';
@@ -18,9 +21,9 @@ function App() {
   }
   //Function ends (delete later)
 
-   setInterval(() => {
-     window.location.reload();
-   }, 30000)
+  setInterval(() => {
+    window.location.reload();
+  }, 30000)
 
 
   useEffect(() => {
@@ -48,11 +51,18 @@ function App() {
 
 
   return (
-    <div className='weather-components-container' >
-      <PresentWeather></PresentWeather>
-      <div className='five-day-forecast-title corner'>5 day forecast</div>
-      <DaysContainer></DaysContainer>
-    </div >
+    <BrowserRouter>
+      <Route path='/' exact render={() => 
+        <div className='weather-components-container' >
+          <PresentWeather></PresentWeather>
+          <div className='five-day-forecast-title corner'>5 day forecast</div>
+          <DaysContainer></DaysContainer>
+          <CreditentialsFooter></CreditentialsFooter>
+        </div >
+      }/>
+
+      <Route path='/creditentials' exact component={CreditentialsComponent}/>
+    </BrowserRouter>
   );
 }
 
