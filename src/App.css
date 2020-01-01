@@ -2,11 +2,15 @@ html, body, #root {
   height: 100%;
 }
 
+body {
+  background-attachment: fixed;
+}
+
 .weather-components-container {
 
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 25% 75%;
+  grid-template-rows: 25% 75% 25%;
   margin: 7px;
   grid-gap: 7px;
   height: 70%;
@@ -28,4 +32,29 @@ html, body, #root {
 
 .corner {
   border-radius: 7px;
+}
+
+.creditentials-footer {
+  font-style: italic;
+  font-size: 200%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  color: black;
+  grid-column: 1 / 9;
+  grid-row: 3 / 4;
+}
+
+.creditentials-footer:hover {
+  background-color:#777777
+}
+
+.creditentials-component {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: darkgray;
 }
