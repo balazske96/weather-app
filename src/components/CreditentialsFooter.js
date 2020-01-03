@@ -9,6 +9,6 @@ export default function CreditentialsFooter(props) {
 
 
     return (
-        <div className='creditentials-footer corner' onClick={onClick}>Creditentials</div>
+        <div className='creditentials-footer corner' onClick={onClick}>Credits</div>
     )
 }
