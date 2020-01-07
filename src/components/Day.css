@@ -1,21 +1,25 @@
 .day-component {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    background-color: darkgray ;
+    flex-basis:auto;
+    justify-content: space-evenly;
     align-items: center;
-    
+    border-style: solid;
+    border-width: 6px;
+    color: white;
 }
 
-.weather-symbol{
-    max-width: 60%;
+.weather-symbol {
+    width: 50%;
+    height: auto;
 }
 
 .day-degree-part {
-    display: flex;   
+    display: flex;
     align-items: center;
 }
 
 .day-name-container {
-    font-size: initial;
+    font-size: 1.5vw;
+    font-weight: bold;
 }

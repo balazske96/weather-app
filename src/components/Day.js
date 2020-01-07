@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './Day.css';
-import SUN from './../weather_logos/sun.png';
-import STORM from './../weather_logos/storm.png';
-import SNOW from './../weather_logos/snow.png';
-import SNOW_1 from './../weather_logos/snow-1.png';
-import RAIN from './../weather_logos/rain.png';
-import RAIN_1 from './../weather_logos/rain-1.png';
-import RAIN_2 from './../weather_logos/rain-2.png';
-import RAIN_3 from './../weather_logos/rain-3.png';
-import MOON from './../weather_logos/moon.png';
-import CLOUD from './../weather_logos/cloud.png';
-import CLOUD_1 from './../weather_logos/cloud-1.png';
-import CLOUD_2 from './../weather_logos/cloud-2.png';
+import SUN from './../weather_logos/minimal_logos/015-sun.png';
+import STORM from './../weather_logos/minimal_logos/027-cloud-12.png';
+import SNOW_1 from './../weather_logos/minimal_logos/024-snow.png';
+import RAIN_1 from './../weather_logos/minimal_logos/029-cloud-10.png';
+import RAIN_3 from './../weather_logos/minimal_logos/036-cloud-3.png';
+import MOON from './../weather_logos/minimal_logos/023-moon.png';
+import CLOUD from './../weather_logos/minimal_logos/037-cloud-2.png';
+import CLOUD_1 from './../weather_logos/minimal_logos/026-cloud-13.png';
+import CLOUD_2 from './../weather_logos/minimal_logos/038-cloud-1.png';
 
 export default function Day(props) {
 
@@ -67,15 +64,15 @@ export default function Day(props) {
     }, [])
 
     return (
-        <div className='day-component corner'>
+        <div className='day-component'>
             <img src={weatherPicturePath} alt="Weather Symbol" className="weather-symbol"></img>
             <div className='day-name-container'>
                 {dayName}
             </div>
             <div className='day-degree-part'>
-                <p className='day-degree-value'>{minimumDegree}</p>
-                <p className='day-degree-value'>/</p>
-                <p className='day-degree-value'>{maximumDegree}</p>
+                <div className='day-degree-value'>{minimumDegree}</div>
+                <div className='day-degree-value'>/</div>
+                <div className='day-degree-value'>{maximumDegree}</div>
             </div>
         </div>
     );
