@@ -16,7 +16,7 @@ function App() {
 
   // This function is just a helper function to avoid react http's problem
   if (window.location.protocol === 'https:') {
-    window.location.href = 'http://venyige-weather.herokuapp.com';
+    window.location.href = 'https://venyige-weather.herokuapp.com';
     window.location.reload();
   }
   //Function ends (delete later)
@@ -27,7 +27,7 @@ function App() {
 
 
   useEffect(() => {
-    axios.get('http://api.openweathermap.org/data/2.5/weather?q=Budapest,hu&units=metric&APPID=f20aa9b471478b0c833a2bea588f7a05')
+    axios.get('https://api.openweathermap.org/data/2.5/weather?q=Budapest,hu&units=metric&APPID=f20aa9b471478b0c833a2bea588f7a05')
       .then(res => {
         if (res.data.weather[0].main == 'Clear') {
           document.body.style.backgroundImage = `url(${SUNNY})`;
