@@ -80,9 +80,11 @@ export default function PresentWeather(props) {
 
     return (
         <div className='present-weather-component corner'>
-            <img src={weatherPicturePath} alt="Weather Symbol" className="present-weather-symbol"></img>
+            <div className="present-weather-symbol">
+                <img src={weatherPicturePath} alt="Weather Symbol" style={{width: '100%'}}></img>
+            </div>
             <div className='present-weather-type'>{weatherType}</div>
-            <div className="present-weather-temperature">{temperature}</div>
+            <div className="present-weather-temperature">{temperature} °C</div>
         </div>
     )
 }

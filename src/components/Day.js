@@ -72,9 +72,9 @@ export default function Day(props) {
                 {dayName}
             </div>
             <div className='day-degree-part'>
-                <div className='day-degree-value'>{minimumDegree}</div>
+                <div className='day-degree-value'>{minimumDegree} °C</div>
                 <div className='day-degree-value'>/</div>
-                <div className='day-degree-value'>{maximumDegree}</div>
+                <div className='day-degree-value'>{maximumDegree} °C</div>
             </div>
         </div>
     );
