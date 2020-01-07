@@ -6,7 +6,7 @@ export default function CreditentialsComponent(props) {
 
         <div className='creditentials-component corner'>
             <div>Icons made by</div>
-            <a style={{color:'white' }} href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>
+            <a style={{color:'white' }} href="https://www.flaticon.com/authors/smartline" title="Smartline">Smartline</a>
             <div>from</div>
             <a style={{color:'white' }} href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             <div>Back to main page:</div>
