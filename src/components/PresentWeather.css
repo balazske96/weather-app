@@ -2,7 +2,6 @@
     /* border-radius: 15px; */
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    background-color: darkgray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,14 +11,17 @@
 }
 
 .present-weather-symbol{
-    max-width: 50%;
+    width: 50%;
+    height: 50%;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .present-weather-temperature {
-    font-size: 300%;
+    font-size: 3vw;
     max-width: 70%;
 }
 
 .present-weather-type {
-    font-size: 300%;
+    font-size: 3vw;
 }
