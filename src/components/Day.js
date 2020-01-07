@@ -65,7 +65,9 @@ export default function Day(props) {
 
     return (
         <div className='day-component'>
-            <img src={weatherPicturePath} alt="Weather Symbol" className="weather-symbol"></img>
+            <div className="weather-symbol">
+                <img src={weatherPicturePath} alt="Weather Symbol" style={{width: '100%'}}></img>
+            </div>
             <div className='day-name-container'>
                 {dayName}
             </div>
