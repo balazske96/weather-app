@@ -10,7 +10,7 @@ export default function CreditentialsComponent(props) {
             <div>from</div>
             <a style={{color:'white' }} href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             <div>Back to main page:</div>
-            <a style={{color:'white' }} href='https://venyige-weather.herokuapp.com'>http://venyige-weather.herokuapp.com</a>
+            <a style={{color:'white' }} href='http://venyige-weather.herokuapp.com'>http://venyige-weather.herokuapp.com</a>
         </div>
 
     )
