@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import './Day.css';
 import SUN from './../weather_logos/minimal_logos/015-sun.png';
 import STORM from './../weather_logos/minimal_logos/027-cloud-12.png';
 import SNOW_1 from './../weather_logos/minimal_logos/024-snow.png';

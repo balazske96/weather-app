@@ -10,7 +10,6 @@ import MOON from './../weather_logos/minimal_logos/023-moon.png';
 import CLOUD from './../weather_logos/minimal_logos/037-cloud-2.png';
 import CLOUD_1 from './../weather_logos/minimal_logos/026-cloud-13.png';
 import CLOUD_2 from './../weather_logos/minimal_logos/038-cloud-1.png';
-import './PresentWeather.css';
 
 export default function PresentWeather(props) {
 
@@ -65,7 +64,7 @@ export default function PresentWeather(props) {
 
 
     useEffect(() => {
-        Axios.get('http://api.openweathermap.org/data/2.5/weather?q=Budapest,hu&units=metric&APPID=f20aa9b471478b0c833a2bea588f7a05')
+        Axios.get('https://api.openweathermap.org/data/2.5/weather?q=Budapest,hu&units=metric&APPID=f20aa9b471478b0c833a2bea588f7a05')
             .then(result => {
                 setWeatherPicture(result);
                 if (result.data.main.temp < 0) {
