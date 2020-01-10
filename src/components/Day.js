@@ -15,6 +15,7 @@ export default function Day(props) {
     const [maximumDegree, setMaximumDegree] = useState(50)
     const [weatherPicturePath, setWeatherPicturePath] = useState(SUN);
     const [dayName, setDayName] = useState('default');
+    const [dayType, setDayType] = useState('');
 
     const setPathByWeatherCode = (code) => {
         switch (code) {
@@ -47,7 +48,7 @@ export default function Day(props) {
             case '13n':
                 return SNOW_1;
             case '01n':
-                return MOON;
+                return SUN;
             case '02n':
                 return CLOUD;
             default:
@@ -59,7 +60,8 @@ export default function Day(props) {
         setMaximumDegree(props.max);
         setMinimumDegree(props.min);
         setDayName(props.name);
-        setWeatherPicturePath(setPathByWeatherCode(props.type))
+        setWeatherPicturePath(setPathByWeatherCode(props.symbolSpecifier));
+        setDayType(props.type);
     }, [])
 
     return (
@@ -69,6 +71,9 @@ export default function Day(props) {
             </div>
             <div className='day-name-container'>
                 {dayName}
+            </div>
+            <div className='day-type-container'>
+                {dayType}
             </div>
             <div className='day-degree-part'>
                 <div className='day-degree-value'>{minimumDegree} °C</div>

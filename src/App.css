@@ -6,6 +6,13 @@ body {
   background-attachment: fixed;
 }
 
+#root {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* padding-top: 70px; */
+}
+
 .weather-components-container {
   max-width: 1200px;
   display: grid;
@@ -14,7 +21,6 @@ body {
   margin: auto;
   margin-top: 70px;
   grid-gap: 7px;
-  /* height: 100% */
 }
 
 .present-weather-component {
@@ -97,6 +103,10 @@ body {
   align-items: center;
 }
 
+.day-type-container {
+  font-size: 1vw;
+}
+
 .day-name-container {
   font-size: 1.5vw;
   font-weight: bold;
@@ -156,6 +166,10 @@ body {
     grid-column: 1;
     flex-direction: row;
     padding: 1%;
+  }
+  
+  .day-type-container {
+    font-size: 2vw;
   }
 
   .weather-symbol {

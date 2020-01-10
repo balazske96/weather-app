@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 import DaysContainer from './components/DaysContainter';
 import PresentWeather from './components/PresentWeather';
@@ -29,11 +28,11 @@ function App() {
   useEffect(() => {
     axios.get('https://api.openweathermap.org/data/2.5/weather?q=Budapest,hu&units=metric&APPID=f20aa9b471478b0c833a2bea588f7a05')
       .then(res => {
-        if (res.data.weather[0].main == 'Clear') {
+        if (res.data.weather[0].main === 'Clear') {
           document.body.style.backgroundImage = `url(${SUNNY})`;
           document.body.style.backgroundSize = 'cover';
         }
-        else if (res.data.weather[0].main = 'Clouds') {
+        else if (res.data.weather[0].main === 'Clouds' || res.data.weather[0].main === 'Mist') {
           document.body.style.backgroundImage = `url(${CLOUDY})`;
           document.body.style.backgroundSize = 'cover';
         }
